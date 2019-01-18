@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/upload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="780">
               <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="49" selection-start-column="49" selection-end-column="49" />
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -160,11 +160,6 @@
               <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
               <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
-              <item name="audiotranscriptionapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -198,12 +193,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547340869124</updated>
       <workItem from="1547340872072" duration="2714000" />
-      <workItem from="1547344619730" duration="61577000" />
+      <workItem from="1547344619730" duration="61909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64291000" />
+    <option name="totallyTimeSpent" value="64623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,16 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/upload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/templates/upload/upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -366,13 +351,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/upload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="49" selection-start-column="49" selection-end-column="49" />
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
