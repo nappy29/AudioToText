@@ -16,8 +16,10 @@ coverage.xml
 .pytest_cache/
 
 # Flask stuff:
-instance/
+/instance/
 .webassets-cache
+
+*.mp3
 
 # Environments
 .env
