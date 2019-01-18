@@ -1,1 +1,1 @@
-web: gunicorn -w 4 audiotranscriptionapp:app
+web: gunicorn -w 4 audiotranscriptionapp/__init__:app
