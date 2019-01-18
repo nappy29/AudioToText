@@ -1,5 +1,5 @@
 import simplejson as json
-import os, logging
+import os
 
 from flask import (
     Blueprint, flash, redirect, render_template, request
@@ -10,7 +10,7 @@ from werkzeug import secure_filename
 
 uploads = Blueprint('uploads_bp', __name__)
 
-transcription_text = ''
+transcription_text = []
 
 ALLOWED_EXTENSIONS = set(['mp3'])
 
@@ -50,7 +50,7 @@ def upload_file():
 
         flash(error)
 
-    return render_template('upload/upload.html', text_result='mc')
+    return render_template('upload/upload.html', text_result='')
 
 
 def obtain_json_from_file(file_name):
@@ -66,7 +66,7 @@ def obtain_json_from_file(file_name):
 
 def load_and_read_json():
     global transcription_text
-    transcript_text = ''
+    transcript_text = []
     with open('transcript_result.json', 'r') as fp:
         # load_and_read_json(fp)
         print("Executing json load")
@@ -77,7 +77,7 @@ def load_and_read_json():
         for transcript in range(len(json_dict['results'])):
             arr = json_dict['results'][transcript]
             transcript_arr = arr['alternatives']
-            transcript_text += transcript_arr[0]['transcript'] +'\n'
+            transcript_text.append(transcript_arr[0]['transcript'])
 
         transcription_text = transcript_text
     return transcription_text

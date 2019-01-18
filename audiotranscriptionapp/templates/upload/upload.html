@@ -18,7 +18,9 @@
 
         </div>
 
-        <p style="margin-top: 22px">{{ text_result }}</p>
+        {% for text in text_result %}
+             <p style="margin-top: 22px; margin-top: 12px">{{ text }}</p>
+        {% endfor %}
 
     </div>
 {#    {% if text_result is not none %}#}
