@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+ <h4>{% block title %} {{ super() }}Transcribe Audio to Text{% endblock %}</h4>
+
+{% block content %}
+{{ super() }}
+    <div class="container text-center">
+        <div id="title_field">
+            <p style="font-size: 33px">Transcribe Audio File To Text </p>
+        </div>
+        <div id="form_field">
+            <form class="form-inline" method=post enctype=multipart/form-data>
+                <div class="form-group btn text-center">
+                    <input type=file size="80" class="form-control-file form-control-lg" name=file>
+                </div>
+                    <input class="btn btn-primary" type=submit value='Obtain Text'>
+            </form>
+
+        </div>
+
+        <p style="margin-top: 22px">{{ text_result }}</p>
+
+    </div>
+{#    {% if text_result is not none %}#}
+{#    {% endif %}#}
+{% endblock %}

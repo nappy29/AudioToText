@@ -1,0 +1,27 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}- Nappy ltd{% endblock %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+      {% block content %}
+          {% for message in get_flashed_messages() %}
+
+            <div class="container text-center alert alert-danger">
+                <div>
+                    {% if message is not none %}
+                         {{ message }}
+                     {% endif %}
+                </div>
+
+            </div>
+          {% endfor %}
+
+              <footer class="footer">
+                <div class="container">
+                    <p>Truth can only be found in one place, the code! Nappy LTD</p>
+                </div>
+          </footer>
+      {% endblock %}
