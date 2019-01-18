@@ -29,7 +29,9 @@ UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
 git clone https://github.com/nappy29/AudioToText.git
 ```
 
-``` cd AudioToText```
+``` 
+cd AudioToText
+```
 
 - It will be safer to run the app in development mode locally. So the following commands will be ok to have it running.
 
