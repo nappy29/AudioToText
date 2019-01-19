@@ -42,6 +42,8 @@ def upload_file():
             error = 'Invalid format selected. Please ensure to select a .mp3 file'
             # return redirect(request.url)
         if file and allowed_file(file.filename):
+            print(os.path.join(app.config['UPLOAD_FOLDER']))
+            print("App config" + app.config['UPLOAD_FOLDER'])
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
             obtain_json_from_file(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
             # return 'file uploaded successfully'
