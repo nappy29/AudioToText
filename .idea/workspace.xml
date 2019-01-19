@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
+              <caret column="78" selection-start-column="78" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -150,11 +150,6 @@
               <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
               <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
-              <item name="audiotranscriptionapp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -189,12 +184,12 @@
       <updated>1547340869124</updated>
       <workItem from="1547340872072" duration="2714000" />
       <workItem from="1547344619730" duration="62457000" />
-      <workItem from="1547858539858" duration="2715000" />
+      <workItem from="1547858539858" duration="3858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67886000" />
+    <option name="totallyTimeSpent" value="69029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,16 +316,6 @@
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -359,10 +344,20 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/audiotranscriptionapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
+          <caret column="78" selection-start-column="78" selection-end-column="78" />
         </state>
       </provider>
     </entry>
