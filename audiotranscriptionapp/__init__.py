@@ -5,7 +5,7 @@ from flask_bootstrap import Bootstrap
 
 def create_app(test_config=None):
     # create and configure the application
-    app = Flask(__name__, instance_path=os.path.dirname(os.path.abspath(__file__)))
+    app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
     )
