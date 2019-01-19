@@ -43,9 +43,9 @@ def upload_file():
             # return redirect(request.url)
         if file and allowed_file(file.filename):
             print(os.path.join(app.config['UPLOAD_FOLDER']))
-            print("App config" + app.config['UPLOAD_FOLDER'])
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
-            obtain_json_from_file(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
+            print("App config" + app.config['UPLOAD'])
+            file.save(os.path.join(app.config['UPLOAD'], secure_filename(file.filename)))
+            obtain_json_from_file(os.path.join(app.config['UPLOAD'], secure_filename(file.filename)))
             # return 'file uploaded successfully'
             print(transcription_text)
             return render_template('upload/upload.html', text_result=transcription_text)
