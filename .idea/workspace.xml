@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="78" selection-start-column="78" selection-end-column="78" />
+              <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -150,6 +150,16 @@
               <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
               <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
+              <item name="audiotranscriptionapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AudioTranscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AudioTranscription" type="462c0819:PsiDirectoryNode" />
+              <item name="instance" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -184,12 +194,12 @@
       <updated>1547340869124</updated>
       <workItem from="1547340872072" duration="2714000" />
       <workItem from="1547344619730" duration="62457000" />
-      <workItem from="1547858539858" duration="3858000" />
+      <workItem from="1547858539858" duration="4688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69029000" />
+    <option name="totallyTimeSpent" value="69859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,7 +367,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="78" selection-start-column="78" selection-end-column="78" />
+          <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
         </state>
       </provider>
     </entry>
