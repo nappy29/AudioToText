@@ -18,9 +18,11 @@
 
         </div>
 
-        {% for text in text_result %}
-             <p style="margin-top: 22px; margin-top: 12px">{{ text }}</p>
+        <div style="margin-top: 15px" class="form-group text-center container">
+            {% for text in text_result %}
+             <p style="margin-top: 22px; text-align: left">{{ text }}</p>
         {% endfor %}
+        </div>
 
     </div>
 {#    {% if text_result is not none %}#}
