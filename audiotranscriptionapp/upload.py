@@ -1,6 +1,11 @@
 import simplejson as json
 import os
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+
 from flask import (
     Blueprint, flash, redirect, render_template, request
 )
@@ -19,6 +24,12 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+
+cloudinary.config(
+    cloud_name = "dgvwxfir4",
+    api_key = "114471239857226",
+    api_secret = "C_wzFCrwcrmy1zwZtoRyP9uqUEM"
+    )
 
 # with app.app_context():
 speech_to_text = SpeechToTextV1(
@@ -44,8 +55,18 @@ def upload_file():
         if file and allowed_file(file.filename):
             print(os.path.join(app.config['UPLOAD_FOLDER']))
             print("App config" + app.config['UPLOAD'])
-            file.save(os.path.join(app.config['UPLOAD'], secure_filename(file.filename)))
-            obtain_json_from_file(os.path.join(app.config['UPLOAD'], secure_filename(file.filename)))
+
+            filename = os.path.join(app.config['UPLOAD'], secure_filename(file.filename))
+            # file.save(filename)
+
+            res = cloudinary.uploader.upload_large(filename, resource_type="auto")
+            genurl = res['secure_url']
+
+            print(genurl)
+            os.remove(filename)
+
+            # obtain_json_from_file(os.path.join(app.config['UPLOAD'], secure_filename(file.filename)))
+            obtain_json_from_file(genurl)
             # return 'file uploaded successfully'
             print(transcription_text)
             return render_template('upload/upload.html', text_result=transcription_text)
